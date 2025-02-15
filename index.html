@@ -13,9 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
         rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
 <body>
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="darkModeToggle" checked>
+            <label for="darkModeToggle" class="toggle-label">
+                <span class="toggle-slider"></span>
+            </label>
+        </div>
     <div class="top-container">
         <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
         <h1>Burhan Aijaz .</h1>
@@ -23,7 +30,7 @@
         <div class="profile">
             <img id="profile-photo" src="images/Burhan.png" alt>
             <h4><a target="_blank"
-                    href="https://drive.google.com/drive/folders/1hA-xiBzHo3s6BscOEhdEbWYo1H6b1Thx">Resume</a>
+                    href="https://drive.google.com/file/d/1i_E22OW7KW0gcS3aD5IAU0mItJfO9H5Y/view?usp=drive_link">Resume</a>
             </h4>
         </div>
         <hr>
@@ -31,10 +38,19 @@
         <div class="middle-container">
 
             <h2 class="all-headers">Hello.</h2>
-            <p class="intro"><em>CSE Undergrad from </em><strong> <a target="_blank" href="https://nitsri.ac.in/">NIT
-                        Srinagar</a> </strong>
-            <p>I am in my 6th Semester, pursuing my B-Tech in CSE.</p>
-            </p>
+                <div class="intro-container">
+                    <p class="intro-text">
+                        <em>Computer Science Graduate from</em>
+                        <strong>
+                            <a target="_blank" href="https://nitsri.ac.in/">NIT Srinagar</a>
+                        </strong>
+                    </p>
+                    <p class="description">
+                        I am a Python Developer with experience in building scalable backend solutions,
+                        automating workflows, and developing data-driven applications. 
+                        I am passionate about solving real-world problems using technology.
+                    </p>
+                </div>
             <hr>
             <section id="projects" class="project-section">
                 <h2 class="all-headers">My Project's</h2>
@@ -74,18 +90,23 @@
                         </p>
                     </a>
 
+                    </a>
+                    <a href="https://burhanaijazz.github.io/WeatherApp/" target="_blank" class="project project-tile">
+                        <img class="project-image" src="images/weatherapp.png" alt="project" />
+                        <p class="project-title">
+
+                            Weather App
+
+                        </p>
+                    </a>
+
             </section>
             <hr>
             <div class="skills">
                 <h2 class="all-headers">Education 📔</h2>
                 <div class="skill-row">
                     <ul>
-                        <li>I am currently pursuing a Bachelor's degree in Computer Science and Engineering at the
-                            esteemed <strong>National Institute of Technology</strong> in Srinagar. I commenced my
-                            studies in 2020 and have been dedicated to expanding my knowledge and skills in this field
-                            ever since.
-
-                        </li>
+                        <li>I graduated with a Bachelor's degree in Computer Science and Engineering from the esteemed <strong>National Institute of Technology</strong> in Srinagar in July 2024. During my studies, I gained a strong foundation in programming, algorithms, and software development.</li>
                         <br>
                         <li>Achieved a <strong>97.1 percentile</strong> in
                             JEE Mains
@@ -103,29 +124,48 @@
                 <div class="skills">
                     <h2 class="all-headers">Work Experience 💼</h2>
                     <div class="skill-row">
-                        <h3>Chegg Expert in Physics</h3>
-                        <p class="skills-paragraph"> 2021 to 2022 <a target="_blank"
-                                href="https://drive.google.com/file/d/1qg1s-hX9hpLwTBRlwNR-s0w3FpTODrfG/view">Certificate</a>
-                        </p>
+                        <h3>Python Developer at Neenopal</h3>
+                        <p class="skills-paragraph">Jan 2024 – Present</p>
+                        <ul>
+                            <li>Built and optimized scalable backend solutions using Python & Django.</li>
+                            <li>Integrated Stripe for payment processing and Klaviyo for automated email workflows.</li>
+                            <li>Engineered an OCR-based invoice processing system, achieving 98% accuracy and reducing manual entry by 80%.</li>
+                            <li>Automated file transfers in SharePoint, reducing manual upload/download time by 90%.</li>
+                            <li>Led the conversion of UI elements to Power BI, improving dashboard interactivity and reducing manual mapping time by 60%.</li>
+                            <li>Developed Tableau Extensions using HTML, CSS, JS, and Tableau SDK to enhance dashboard functionality.</li>
+                        </ul>
+
+                        <h3>Research Intern at IIT Hyderabad</h3>
+                        <p class="skills-paragraph">Dec 2022 – Feb 2023 <a target="_blank" href="https://drive.google.com/file/d/1OJbg1Lf-bhyh6BQZWH0KiD1IPt4scP9C/view?usp=sharing">Certificate</a></p>
+                        <ul>
+                            <li>Conducted clinical sentiment analysis using BERT, RoBERTa, and Transformer-XL.</li>
+                            <li>Developed and fine-tuned NLP models for text classification on clinical datasets.</li>
+                        </ul>
+
 
                         <h3>Research Intern at IISC Banglore</h3>
                         <p class="skills-paragraph">2022 <a target="_blank"
                                 href="https://drive.google.com/file/d/1KJAVe3WqgP27tMTMeqW8u-q02eWzz0CH/view">Certificate</a>
+                        <ul>
+                            <li>Developed an Automatic Speech Recognition (ASR) system for Kashmiri language, enabling real-time transcription.</li>
+                            <li>Worked in a research-driven environment, collaborating with experts to enhance speech recognition capabilities.
+</li>
+                        </ul>
+                        <h3>Chegg Expert in Physics</h3>
+                        <p class="skills-paragraph"> 2021 to 2022 <a target="_blank"
+                                href="https://drive.google.com/file/d/1qg1s-hX9hpLwTBRlwNR-s0w3FpTODrfG/view">Certificate</a>
                         </p>
-                        <h3>Research Intern at IIT Hyderabad</h3>
-                        <p class="skills-paragraph">2023 <a target="_blank"
-                                href="https://drive.google.com/file/d/1OJbg1Lf-bhyh6BQZWH0KiD1IPt4scP9C/view?usp=sharing">Certificate</a>
-                        </p>
-
                     </div>
                     <hr>
                     <div class="skills">
                         <h2 class="all-headers">My Skills 🤹</h2>
                         <div class="skill-row">
-                            <h3>Python : ★★★★☆</h3>
-                            <h3>DSA in Python : ★★★★☆</h3>
-                            <h3>Web Developement : ★★★☆☆</h3>
-                            <h3>Git / Github: ★★★★☆</h3>
+                            <h3>Python & Django : ★★★★★</h3>
+                            <h3>SQL & Database Management : ★★★★☆</h3>
+                            <h3>Power BI & Tableau : ★★★☆☆</h3>
+                            <h3>OCR & Automation : ★★★★☆</h3>
+                            <h3>Git / GitHub : ★★★★★</h3>
+                            <h3>Web Development (HTML, CSS, JS) : ★★★☆☆</h3>
                             <h3>C / C++ : ★★★☆☆</h3>
                             <h3>Java : ★★☆☆☆</h3>
                             <p></p>
@@ -188,7 +228,7 @@
                         <a class="footer-link" target="_blank"
                             href="https://www.linkedin.com/in/burhanaijaz/">LinkedIn</a>
                         <a class="footer-link" target="_blank" href="https://twitter.com/_burhan_aijaz_">Twitter</a>
-                        <p class="copyright">©2023 Burhan Aijaz.</p>
+                        <p class="copyright">©2025 Burhan Aijaz.</p>
                     </div>
 
 </body>
