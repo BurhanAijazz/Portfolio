@@ -25,16 +25,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 });
-
-// // Set dark mode as default
-// document.documentElement.setAttribute('data-theme', 'dark');
-// document.getElementById('darkModeToggle').checked = true;
-
-// // Add event listener for toggle
-// document.getElementById('darkModeToggle').addEventListener('change', function () {
-//     if (this.checked) {
-//         document.documentElement.setAttribute('data-theme', 'dark');
-//     } else {
-//         document.documentElement.setAttribute('data-theme', 'light');
-//     }
-// });
